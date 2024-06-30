@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2j8vdt5cyp22"]
+
+[ext_resource type="Texture2D" uid="uid://c6115kvp1myke" path="res://resources/PiratePixelBoat/3 Objects/french_ship.png" id="1_kdkcw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xt3fu"]
+size = Vector2(287.404, 64.3419)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_img45"]
+a = Vector2(-61.9401, 76.1228)
+b = Vector2(82.005, 11.7809)
+
+[node name="FrenchShip" type="StaticBody2D"]
+texture_filter = 1
+position = Vector2(1909, 495)
+scale = Vector2(1.14627, 1.10348)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-134.349, -38.9676)
+scale = Vector2(1.35885, 1.2834)
+texture = ExtResource("1_kdkcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-169.245, 106.934)
+shape = SubResource("RectangleShape2D_xt3fu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_img45")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgnjbv326km6t"
+path="res://.godot/imported/DrunkenSailor - Instrumental Fiddle Sea Shanty_free.mp3-6f7c221fa82c80a0f30b44446ae1747f.mp3str"
+
+[deps]
+
+source_file="res://resources/audio/DrunkenSailor - Instrumental Fiddle Sea Shanty_free.mp3"
+dest_files=["res://.godot/imported/DrunkenSailor - Instrumental Fiddle Sea Shanty_free.mp3-6f7c221fa82c80a0f30b44446ae1747f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

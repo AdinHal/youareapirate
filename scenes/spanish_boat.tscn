@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpsot12u14v56"]
+
+[ext_resource type="Texture2D" uid="uid://brkxlh625d0r5" path="res://resources/PiratePixelBoat/3 Objects/spanish_ship.png" id="1_lb7vk"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_f3sl6"]
+a = Vector2(153, -62)
+b = Vector2(423, -193)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7toq"]
+size = Vector2(532, 112)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07sbj"]
+size = Vector2(119, 82)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_q7gja"]
+a = Vector2(-400, 105)
+b = Vector2(-251, 146)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.99998, -1.52588e-05)
+scale = Vector2(2.51465, 2.51465)
+texture = ExtResource("1_lb7vk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-22, 290)
+shape = SubResource("SegmentShape2D_f3sl6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-58, 284)
+shape = SubResource("RectangleShape2D_p7toq")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-310, 186)
+shape = SubResource("RectangleShape2D_07sbj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_q7gja")

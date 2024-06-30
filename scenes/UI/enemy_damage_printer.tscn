@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c712xo6l46emu"]
+
+[ext_resource type="Script" path="res://Script/UI/enemy_damage_printer.gd" id="1_wlkio"]
+[ext_resource type="PackedScene" uid="uid://defxag4bc4u4v" path="res://scenes/UI/health_changed_label.tscn" id="2_4xj7k"]
+
+[node name="EnemyDamagePrinter" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wlkio")
+health_changed_label = ExtResource("2_4xj7k")

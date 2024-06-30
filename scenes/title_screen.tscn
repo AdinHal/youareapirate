@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=3 uid="uid://blglbgq58phd4"]
+
+[ext_resource type="Script" path="res://Script/TitleScreen.gd" id="1_8ge3n"]
+[ext_resource type="Texture2D" uid="uid://c8yvglfifod75" path="res://resources/bg.webp" id="2_ymjus"]
+[ext_resource type="Texture2D" uid="uid://d0khxfb3bsulk" path="res://resources/youareapirate_1024_logo_transparent_new.png" id="3_guw2b"]
+[ext_resource type="Texture2D" uid="uid://djofqtslwgkrn" path="res://resources/UI/PNG/buttonLong_brown.png" id="4_gr4e2"]
+[ext_resource type="Texture2D" uid="uid://by04p75xy42a3" path="res://resources/UI/PNG/buttonLong_brown_pressed.png" id="5_87we5"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ge3n")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 647.0
+texture = ExtResource("2_ymjus")
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 186)
+scale = Vector2(0.36274, 0.355004)
+texture = ExtResource("3_guw2b")
+
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 271.0
+offset_right = 754.0
+offset_bottom = 349.0
+texture_normal = ExtResource("4_gr4e2")
+texture_pressed = ExtResource("5_87we5")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="StartButton"]
+layout_mode = 0
+offset_right = 358.0
+offset_bottom = 76.0
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 457.0
+offset_right = 756.0
+offset_bottom = 537.0
+texture_normal = ExtResource("4_gr4e2")
+texture_pressed = ExtResource("5_87we5")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 0
+offset_right = 359.0
+offset_bottom = 76.0
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 365.0
+offset_right = 754.0
+offset_bottom = 441.0
+texture_normal = ExtResource("4_gr4e2")
+texture_pressed = ExtResource("5_87we5")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="OptionsButton"]
+layout_mode = 0
+offset_right = 355.0
+offset_bottom = 73.0
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]

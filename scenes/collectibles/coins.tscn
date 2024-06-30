@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc2l1y5j54n4c"]
+
+[ext_resource type="Script" path="res://Script/collectibles/coins.gd" id="1_0opeu"]
+[ext_resource type="Texture2D" uid="uid://g72p5ge5l5cr" path="res://resources/PixelArtCollectibles/PNG/Transperent/Icon32.png" id="1_k7wcv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cx3ay"]
+radius = 12.3693
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_0opeu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.25, 1.25)
+scale = Vector2(0.703125, 0.703125)
+texture = ExtResource("1_k7wcv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cx3ay")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

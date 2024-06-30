@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpi38d60sea1j"]
+
+[ext_resource type="Texture2D" uid="uid://8hx87a7fgw40" path="res://resources/PiratePixelBoat/3 Objects/Ship.png" id="1_w4mhd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcef8"]
+size = Vector2(258.223, 54.164)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="Starting Boat" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(747, 404)
+scale = Vector2(1.82013, 1.80932)
+texture = ExtResource("1_w4mhd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(704, 597)
+scale = Vector2(1.82013, 1.80932)
+shape = SubResource("RectangleShape2D_mcef8")
