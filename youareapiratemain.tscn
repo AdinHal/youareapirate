@@ -1973,6 +1973,15 @@ position = Vector2(7925, 388)
 [node name="Rum8" parent="." instance=ExtResource("27_888ec")]
 position = Vector2(4564, 428)
 
+[node name="Chest4" parent="." instance=ExtResource("28_38gbc")]
+position = Vector2(13045, 337)
+
+[node name="Rum9" parent="." instance=ExtResource("27_888ec")]
+position = Vector2(9706, 281)
+
+[node name="Rum10" parent="." instance=ExtResource("27_888ec")]
+position = Vector2(9770, 362)
+
 [connection signal="body_entered" from="Coins" to="HUD" method="_on_coins_body_entered"]
 [connection signal="body_entered" from="Coins2" to="HUD" method="_on_coins_body_entered"]
 [connection signal="body_entered" from="Coins3" to="HUD" method="_on_coins_body_entered"]
@@ -1994,3 +2003,6 @@ position = Vector2(4564, 428)
 [connection signal="body_entered" from="Rum6" to="HUD" method="_on_rum_body_entered"]
 [connection signal="body_entered" from="Rum7" to="HUD" method="_on_rum_body_entered"]
 [connection signal="body_entered" from="Rum8" to="HUD" method="_on_rum_body_entered"]
+[connection signal="body_entered" from="Chest4" to="HUD" method="_on_chest_body_entered"]
+[connection signal="body_entered" from="Rum9" to="HUD" method="_on_rum_body_entered"]
+[connection signal="body_entered" from="Rum10" to="HUD" method="_on_rum_body_entered"]

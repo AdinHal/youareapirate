@@ -31,3 +31,11 @@ func _on_coins_body_entered(body):
 
 func display_win_screen():
 	get_tree().call_deferred("change_scene_to_file","res://scenes/you_won.tscn")
+
+
+func _on_chest_body_entered(body):
+	coinCount += 10
+	$Coins.text = str(coinCount)
+	
+	if coinCount >= 70:
+		display_win_screen()
