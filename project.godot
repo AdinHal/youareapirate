@@ -21,6 +21,8 @@ SignalBb="*res://Script/signal_bb.gd"
 
 [display]
 
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://resources/UI/PNG/cursorGauntlet_grey.png"
 
 [input]

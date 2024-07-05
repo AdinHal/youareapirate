@@ -52,22 +52,4 @@ text = "Main Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButton2" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 492.0
-offset_top = 363.0
-offset_right = 682.0
-offset_bottom = 412.0
-texture_normal = ExtResource("3_t43p3")
-texture_pressed = ExtResource("4_wu702")
-
-[node name="Label" type="Label" parent="TextureButton2"]
-layout_mode = 0
-offset_right = 190.0
-offset_bottom = 48.0
-text = "Quit"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]

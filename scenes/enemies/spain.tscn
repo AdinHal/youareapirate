@@ -231,7 +231,7 @@ radius = 31.0
 height = 90.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8isd6"]
-size = Vector2(81, 54)
+size = Vector2(7, 54)
 
 [node name="SpanishEnemy" type="CharacterBody2D"]
 script = ExtResource("1_gsdk8")
@@ -254,8 +254,12 @@ script = ExtResource("53_y6uyy")
 monitoring = false
 script = ExtResource("54_qpkxo")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Kick"]
+position = Vector2(33, 10)
+shape = SubResource("RectangleShape2D_8isd6")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kick"]
-position = Vector2(0.5, 10)
+position = Vector2(-33.5, 10)
 shape = SubResource("RectangleShape2D_8isd6")
 
 [connection signal="body_entered" from="Kick" to="Kick" method="_on_body_entered"]

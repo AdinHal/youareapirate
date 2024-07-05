@@ -31,9 +31,9 @@ texture = ExtResource("3_guw2b")
 [node name="StartButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 396.0
-offset_top = 271.0
+offset_top = 353.0
 offset_right = 754.0
-offset_bottom = 349.0
+offset_bottom = 431.0
 texture_normal = ExtResource("4_gr4e2")
 texture_pressed = ExtResource("5_87we5")
 stretch_mode = 0
@@ -64,24 +64,5 @@ text = "Quit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="OptionsButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 396.0
-offset_top = 365.0
-offset_right = 754.0
-offset_bottom = 441.0
-texture_normal = ExtResource("4_gr4e2")
-texture_pressed = ExtResource("5_87we5")
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="OptionsButton"]
-layout_mode = 0
-offset_right = 355.0
-offset_bottom = 73.0
-text = "Options"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]

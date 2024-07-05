@@ -1642,6 +1642,7 @@ scale = Vector2(0.66129, 0.673913)
 texture = ExtResource("7_c5j7y")
 
 [node name="FirstShip" parent="." instance=ExtResource("9_bs2x5")]
+texture_filter = 1
 position = Vector2(704, 601)
 
 [node name="Sprite2D6" type="Sprite2D" parent="."]
@@ -1685,9 +1686,11 @@ scale = Vector2(0.77756, 0.825)
 texture = ExtResource("10_36iuv")
 
 [node name="SpanishBoat" parent="." instance=ExtResource("14_aatf4")]
+texture_filter = 1
 position = Vector2(4243, 326)
 
 [node name="SpanishBoat2" parent="." instance=ExtResource("14_aatf4")]
+texture_filter = 1
 position = Vector2(5036, 336)
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
@@ -1815,12 +1818,15 @@ scale = Vector2(0.604232, 0.600003)
 texture = ExtResource("16_non1s")
 
 [node name="British" parent="." instance=ExtResource("18_wo8uk")]
+texture_filter = 1
 position = Vector2(8263, -434)
 
 [node name="British2" parent="." instance=ExtResource("18_wo8uk")]
+texture_filter = 1
 position = Vector2(9536, -457)
 
 [node name="British3" parent="." instance=ExtResource("18_wo8uk")]
+texture_filter = 1
 position = Vector2(10863, -463)
 
 [node name="2" type="Sprite2D" parent="."]
@@ -1873,17 +1879,17 @@ texture = ExtResource("16_non1s")
 position = Vector2(10710, 631)
 texture = ExtResource("17_xce54")
 
-[node name="French" parent="." instance=ExtResource("23_odxgl")]
+[node name="EnemyDamagePrinter" parent="." instance=ExtResource("24_roytx")]
+
+[node name="FrenchEnemy" parent="." instance=ExtResource("23_odxgl")]
 z_index = -1
 position = Vector2(1931, 550)
 
-[node name="EnemyDamagePrinter" parent="." instance=ExtResource("24_roytx")]
-
-[node name="French2" parent="." instance=ExtResource("23_odxgl")]
+[node name="FrenchEnemy2" parent="." instance=ExtResource("23_odxgl")]
 z_index = -1
 position = Vector2(2294, 551)
 
-[node name="French3" parent="." instance=ExtResource("23_odxgl")]
+[node name="FrenchEnemy3" parent="." instance=ExtResource("23_odxgl")]
 z_index = -1
 position = Vector2(2729, 555)
 
@@ -1907,15 +1913,15 @@ position = Vector2(4605, 413)
 [node name="Coins5" parent="." instance=ExtResource("25_uv7kx")]
 position = Vector2(5408, 419)
 
-[node name="Spaniard" parent="." instance=ExtResource("29_6wr7c")]
+[node name="SpanishEnemy" parent="." instance=ExtResource("29_6wr7c")]
 z_index = -1
 position = Vector2(4223, 510)
 
-[node name="Spaniard2" parent="." instance=ExtResource("29_6wr7c")]
+[node name="SpanishEnemy2" parent="." instance=ExtResource("29_6wr7c")]
 z_index = -1
 position = Vector2(5034, 516)
 
-[node name="Spaniard3" parent="." instance=ExtResource("29_6wr7c")]
+[node name="SpanishEnemy3" parent="." instance=ExtResource("29_6wr7c")]
 z_index = -1
 position = Vector2(4855, 522)
 

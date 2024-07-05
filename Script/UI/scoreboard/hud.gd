@@ -23,7 +23,7 @@ func _on_rum_body_entered(body):
 		updateHealthDisplay()
 
 func _on_coins_body_entered(body):
-	coinCount += 2
+	coinCount += 1
 	$Coins.text = str(coinCount)
 	
 	if coinCount >= 70:
@@ -34,7 +34,7 @@ func display_win_screen():
 
 
 func _on_chest_body_entered(body):
-	coinCount += 10
+	coinCount += 15
 	$Coins.text = str(coinCount)
 	
 	if coinCount >= 70:

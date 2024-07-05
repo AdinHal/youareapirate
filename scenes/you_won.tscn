@@ -23,23 +23,6 @@ offset_bottom = 649.0
 texture = ExtResource("1_nx6fj")
 expand_mode = 1
 
-[node name="QuitBtn" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 481.0
-offset_top = 441.0
-offset_right = 671.0
-offset_bottom = 490.0
-texture_normal = ExtResource("2_riwc7")
-texture_pressed = ExtResource("3_tca8v")
-
-[node name="Label" type="Label" parent="QuitBtn"]
-layout_mode = 0
-offset_right = 189.0
-offset_bottom = 47.0
-text = "Quit"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="MainMenuBtn" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 481.0
@@ -75,5 +58,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 max_lines_visible = 4
 
-[connection signal="pressed" from="QuitBtn" to="." method="_on_quit_btn_pressed"]
 [connection signal="pressed" from="MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]

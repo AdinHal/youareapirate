@@ -231,7 +231,7 @@ radius = 34.0
 height = 104.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dytj6"]
-size = Vector2(20, 58)
+size = Vector2(7, 58)
 
 [node name="CharacterBody2D2" type="CharacterBody2D"]
 script = ExtResource("1_ik4b2")
@@ -239,10 +239,8 @@ script = ExtResource("1_ik4b2")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.191111, 0.191111)
 sprite_frames = SubResource("SpriteFrames_mue2m")
-animation = &"attack"
+animation = &"walking"
 autoplay = "walking"
-frame = 9
-frame_progress = 0.369233
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 5)
@@ -255,11 +253,11 @@ script = ExtResource("26_ghlya")
 script = ExtResource("54_hrerx")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Kick"]
-position = Vector2(-42, 14)
+position = Vector2(-35.5, 14)
 shape = SubResource("RectangleShape2D_dytj6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kick"]
-position = Vector2(46, 16)
+position = Vector2(40, 16)
 shape = SubResource("RectangleShape2D_dytj6")
 
 [connection signal="body_entered" from="Kick" to="Kick" method="_on_body_entered"]

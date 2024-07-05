@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dthtqy6xfi1vu"]
+
+[ext_resource type="Texture2D" uid="uid://dptyay1xtetgk" path="res://resources/innerboat-bg.png" id="1_d8nje"]
+
+[node name="EasterEgg" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1149.0
+offset_bottom = 647.0
+texture = ExtResource("1_d8nje")
+expand_mode = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
